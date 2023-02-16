@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>    let alturaPedro = 1.50;
+        let alturaLucas = 1.10;
+        let tempo = 0;
+        alturaPedro = alturaPedro.toFixed(2);
+        alturaLucas = alturaLucas.toFixed(2);
+
+        while (alturaPedro > alturaLucas) {
+            alturaPedro = alturaPedro + 0.02;
+            alturaLucas = alturaLucas + 0.03;
+
+            if (alturaPedro == alturaLucas) {
+                console.log(tempo + "Lucas está com a mesma altura de Pedro. " + "Pedro: " + alturaPedro + " Lucas: " + alturaLucas);
+            }
+
+          
+                console.log(tempo + " altura de Lucas: " + alturaLucas + " e altura de Pedro: " + alturaPedro);
+                tempo++;
+            }
+        
+            console.log("Demorara " + tempo + " anos para Lucas ficar maior que Pedro");
+
+</script>
+</body>
+</html>

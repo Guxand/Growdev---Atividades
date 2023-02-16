@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+const alunos = [{
+    nome:'Roberto',
+    idade:28,
+    skills:['javascript','typescript','react']
+},
+{
+    nome:'Arthur',
+    idade:25,
+    skills:['javascript','typescript','react']
+},
+{
+    nome:'Fátima',
+    idade:35,
+    skills:['Nodejs','typescript','fluter']
+},
+{
+    nome:'Gustavo',
+    idade:40,
+    skills:['sass','html','css']
+},
+{
+    nome:'Maria',
+    idade:18,
+    skills:['git','typescript','react']
+}];
+function quemSabe(arrayAlunos,skill) {
+    arrayAlunos.forEach(aluno => {
+        if (aluno.skills.includes(skill)) {
+            console.log(aluno.nome);
+        }
+    });
+};
+
+quemSabe(alunos,'typescript');
+
+    </script>
+</body>
+</html>

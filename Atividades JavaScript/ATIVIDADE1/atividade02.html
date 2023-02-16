@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade prática 02</title>
+</head>
+<body>
+    <script>
+
+/*
+Desenvolva um algoritmo para ler o número total de eleitores de um
+município, o número de votos brancos, nulos e válidos. Calcular e
+escrever o percentual que cada um representa em relação ao total
+de eleitores.
+
+passo 1
+somar os votos
+ brancos = 754
+nulos = 876
+válidos = 15.743
+total de eleitores = brancos + nulos + válidos 
+
+passo 2
+percentual de válidos = válidos/total*100
+percentual de nulos = nulos/total*100
+percentual de brancos = brancos/total*100
+
+passo 3
+escrever resultados
+*/
+      
+
+    let brancos = 754 
+    console.log('O valor de votos em brancos', brancos)
+    let nulos = 876
+    console.log('O valor de votos nulos', nulos)
+    let validos = 15743
+    console.log('O valor de votos validos', validos)
+
+    let totais = nulos + brancos + validos
+    console.log('O valor total sw votos é', totais)
+
+    let perBrancos = brancos / totais * 100
+    console.log('Porcentagem de votos em branco é: %',perBrancos)
+
+    let perNulos = nulos / totais * 100
+    console.log('Porcentagem de votos em nulos é: %', perNulos)
+
+        let perValidos = validos / totais * 100
+        console.log('Porcentagem de votos Validos é: %', perValidos)
+
+    </script>
+</body>
+</html>

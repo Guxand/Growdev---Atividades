@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let precoTabela = parseFloat(prompt("qual o valor da sua compra? "));
+        let pagamento = Number(prompt("qual a forma de pagamento?\n 1 - avista \n 2 - parcelado de 2 a 5 vezes \n 3 - parcelado de 6 a 10x \n 4 - parcelado de 11 a 15x  "));
+
+
+
+        switch (pagamento) {
+            case 1:
+                if (pagamento = 1) {
+                    precoTotal = precoTabela - ((precoTabela * 2.5) / 100)
+                    console.log(` O valor da sua compra foi de R$ ${precoTabela}, total da compra com desconto ficou R$ ${precoTotal} `)
+
+                }
+                break
+
+            case 2:
+
+                numeroVezes = Number(prompt("Digite a quantidade de parcelas que quer fazer:"))
+                if (numeroVezes <= 5) {
+                    console.log(`sua compra total foi de R$ ${precoTabela}, nao teve desconto nem acrescimo, foi parcelado em ${numeroVezes} x, cada parcela foi de R$ ${precoTotal = precoTabela / numeroVezes}`)
+
+                }
+                break
+
+            case 3:
+
+                numeroVezes = Number(prompt("Digite a quantidade de parcelas que quer fazer:"));
+
+                if (numeroVezes <= 10) {
+                    precoTotal = (precoTabela + (precoTabela * 0, 06));
+                    console.log(`Sua compra total foi de R$ ${precoTabela}, com acrescimo de 6%,R$  ${precoTabela * 0, 06},totalizando R$ ${precoTotal} foi parcelado em ${numeroVezes}x, no valor de R$ ${precoTotal / numeroVezes}`)
+
+                }
+                break
+            case 4:
+                numeroVezes = Number(prompt("Digite a quantidade de parcelas que quer fazer:"));
+
+                if (pagamento >= 15) {
+                    precoTotal = (precoTabela + (precoTabela * 0, 13));
+                    console.log(`Sua compra foi de R$ ${precoTabela}, com acrescimo de 13%,R$ ${precoTabela * 0, 13},totalizando R$ ${precoTotal} foi parcelado em ${numeroVezes}x, no valor de R$ ${precoTotal / numeroVezes}`)
+
+                }
+                break
+
+
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*3. Crie uma função que recebe por parâmetro um valor inteiro e
+positivo e retorne verdadeiro se o número for primo ou falso se não
+for.*/
+
+let valor = Number(prompt('Insira um valor inteiro:'));
+
+function ePrimo(valor) {
+
+    let divisores = 0;
+for(let i = 1; i <= valor; i++) {
+
+        if(valor % i === 0) {
+
+            divisores++;
+            console.log(valor, divisores)
+
+        };
+
+    };
+if(divisores === 2) {
+
+        alert(`${valor} é um número primo!`);
+
+    } else {
+
+        alert(`${valor} não é um número primo!`);
+
+    };
+
+};
+
+ePrimo(valor);
+
+
+    
+    </script>
+</body>
+</html>

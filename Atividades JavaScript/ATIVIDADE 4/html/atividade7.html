@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+const arrayNumeros = [1, 3, 5, 6, 9, 15, 2, 3, 5, 7]; 
+  
+  let positivos = 0; 
+  let negativos = 0; 
+  let soma = 0 
+  for(let i = 0; i < arrayNumeros.length; i++) { 
+  soma += arrayNumeros[i]; 
+  if(arrayNumeros[i]<0) { 
+    negativos++ 
+  }else
+  if(arrayNumeros[i]>0){ 
+    positivos++ 
+   } 
+  } 
+  const media = soma/arrayNumeros.length; 
+   
+  console.log(`A média dos valores é ${media}, foram passados ${positivos} valores positivos e ${negativos} valores negativos fazendo com que ${100*positivos/arrayNumeros.length}% sejam valores positivos e ${100*negativos/arrayNumeros.length}% sejam valores negativos`);
+
+    </script>
+</body>
+</html>

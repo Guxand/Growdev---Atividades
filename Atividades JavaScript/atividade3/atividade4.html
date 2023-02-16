@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+/*Idade Peso Categoria
+Até 12 anos - Infantil
+13 a 16 anos Até 40kg Juvenil leve
+Acima de 40kg Juvenil pesado
+17 a 24 anos Até 45kg Sênior leve
+Acima de 45kg até 60kg Sênior médio
+Acima de 60kg Sênior pesado
+Acima de 24 anos - Veterano
+
+const idade = 
+const peso = 
+para infantil a idade tem que ser < que 12.
+para juvenil leve tem que ser de 13 a 16. idade <16. peso <40kg
+para juvenil pesado <16 e o peso >40kg.
+para Senior Leve idade <24 e peso <45kg.
+para Senior medio peso <60.
+para Senior Pesado peso >60.
+Veterano idade >24.
+
+*/
+const idade = 25;
+const peso = 60;
+
+if (idade<=12) {
+    console.log('Categoria Infantil')
+} else if (idade<16 && peso<=40) {
+    console.log('categoria juvenil leve');
+} else if (idade<16 && peso>40){
+    console.log('categoria juvenil pesado');
+} else if (idade<24 && peso<=45){
+    console.log('categoria sênior leve');
+} else if(idade<24 && peso<=60) {
+    console.log('categoria sênio médio');
+} else if (idade<24 && peso>60){
+    console.log('categoria sênior pesado');
+} else {
+    console.log('categoria veterano');
+}
+
+
+</script>
+
+</body>
+</html>

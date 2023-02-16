@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const nome = prompt('Qual seu nome?');
+const sexo = prompt('Qual seu sexo? **masculino ou feminino**');
+const valor = Number(prompt('Qual o valor?'));
+let valorAPagar;
+
+if (sexo == 'masculino') {
+    valorAPagar = 0.95*valor;
+} else if (sexo == 'feminino'){
+    valorAPagar = 0.87*valor;
+}
+console.log(valorAPagar);
+    </script>
+</body>
+</html>

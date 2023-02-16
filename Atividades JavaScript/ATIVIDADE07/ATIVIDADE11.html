@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    const turno = prompt(`
+        Em que turno você estuda? 
+        Digite:
+        M para matutino
+        T para vesperino
+        N para noturno
+        `).toUpperCase();
+        
+        switch (turno) {
+            case 'M':
+                alert("Bom dia")
+                break;
+            case 'T':
+                alert('Boa tarde')
+                break;
+            case 'N':
+                alert('Boa noite')
+                break;
+        
+            default:
+                break;
+        }
+        </script>
+</body>
+</html>

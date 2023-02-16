@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let idade=0
+cont= 0
+soma=0
+media=0;
+
+while (idade !=999) {
+    idade = Number(window.prompt("Informe uma idade ou [999] para encerrar: "));
+
+   
+    if (idade !=999 && !isNaN(idade) === true){
+        cont++;
+        soma +=idade;
+    }
+    else if (!isNaN(idade) === false){
+      while (!isNaN(idade) === false && idade !=999){
+        idade = Number(window.prompt("Valor informado é inválido, por favor, informe outro valor ou [999] para sair: ")); 
+      }
+      if(idade ===999){
+        break;
+      }
+      else{
+        cont++;
+      soma +=idade; 
+      }
+      
+}
+}
+
+media = Number(soma/cont);
+if(soma===0 && cont===0){
+    document.write(`O número de alunos é ${cont} e a média de idade entre eles é ${soma}.`);
+}
+else{
+    document.write(`O número de alunos é ${cont} e a média de idade entre eles é ${media.toFixed(2)}.`);
+}
+    </script>
+</body>
+</html>

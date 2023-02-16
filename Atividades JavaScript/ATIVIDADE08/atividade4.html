@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*4. Crie uma função que recebe por parâmetro o tempo de duração de
+uma fábrica expressa em segundos e retorna esse tempo em horas,
+minutos e segundos.
+Ex:
+Entrada: 3672
+Saída: 1:1:12*/
+
+
+
+function horas(segundos) {
+            let minutos = segundos / 60;
+            let horas = segundos / 3600;
+            document.write(`${horas}:${minutos}:${segundos}`);
+        }
+        console.log(horas(Number.parseInt(prompt("Digite um valor em segundos: "))));
+        function inteiro(value){
+        let soma = 0;
+            for(i = 1; i < value; i++){
+                if(value % i == 0){
+                    soma = soma + i;
+                    console.log(i)
+                }
+            }
+            if(soma == value){
+                console.log("Número perfeito")
+            } else {
+                console.log("Número não perfeito")
+            }
+        }
+
+        inteiro(parseInt(prompt("Digite um número: ")))
+ 
+
+    </script>
+</body>
+</html>

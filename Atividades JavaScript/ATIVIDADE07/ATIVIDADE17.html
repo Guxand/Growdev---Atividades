@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let brancos = Number(prompt("quantos votos brancos? "));
+        let nulos = Number(prompt("quantos votos nulos? "));
+        let validos = Number(prompt("quantos votos validos? "));
+
+        let totalEleitores = brancos + nulos + validos
+
+
+
+        document.writeln(`Total de eleitores é ${totalEleitores}, sendo o percentual de cada um: <br> votos brancos: ${(brancos * totalEleitores) / 100}, % <br> votos nulos: ${(nulos * totalEleitores) / 100}, % <br> votos válidos: ${(validos * totalEleitores) / 100}%`)
+
+    </script>
+
+
+</body>
+</html>

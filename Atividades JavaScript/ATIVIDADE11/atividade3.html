@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+const aluno1 = {
+    nome: 'Alexandre',
+    nota1: 9,
+    nota2: 10,
+    media: function(){
+        return (this.nota1+this.nota2)/2},
+};
+const aluno2 = {
+    nome: 'Roberta',
+    nota1: 8,
+    nota2: 9,
+    media: function(){
+        return (this.nota1+this.nota2)/2},
+};
+console.log(aluno1,aluno2);
+console.log(`Média do ${aluno1.nome} é ${aluno1.media()}`);
+console.log(`Média do ${aluno2.nome} é ${aluno2.media()}`);
+console.log(`A média da turma é ${(aluno1.media()+aluno2.media())/2}`);
+    </script>
+</body>
+</html>

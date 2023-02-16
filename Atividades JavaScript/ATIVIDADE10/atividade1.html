@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+const salarios = [5000.00, 5460.50, 3452.00, 6900.00, 7590.10, 8012.99,1290.00, 15000.00];
+function exercicio1(array) {
+    const maiorFindIndex = (numero) => numero> 7500;
+    const maiorSome = (numero) => numero> 10000;
+    const maiorFilter = (numero) => numero> 8000;
+    console.log('a)',array.findIndex(maiorFindIndex));
+    console.log('b)',array.sort((a,b) => a - b));
+    console.log('c)',array.sort((a,b) => b - a));
+    console.log('d)',array.some(maiorSome));
+    console.log('e',array.filter(maiorFilter));
+}
+
+    </script>
+</body>
+</html>

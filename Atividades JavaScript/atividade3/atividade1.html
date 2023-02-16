@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>
+
+const peso = 90 ;
+const altura = 1.8 ;
+let status = '';
+const imc = peso/(altura * altura);
+
+if (imc < 18.5) {
+    status = 'Você esta abaixo da faixa de peso ideal'
+} else if (imc >= 18.5 && imc <= 24.99) {
+    status = 'Voce está dentro da faixa de peso ideal'
+} else {
+    status = 'Voce esta acima da faixa de peso ideal'
+}
+
+console.log(status);
+
+</script>
+
+
+</body>
+</html>

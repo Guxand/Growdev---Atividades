@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>
+
+/*Faça um algoritmo que simule um caixa eletrônico. Nesse algoritmo
+a conta do usuário deve ser criada já com um saldo positivo. O
+usuário precisa informar a quantidade de dinheiro que deseja
+retirar, esse valor deve ser um número positivo, múltiplo de 5 e
+menor do que o saldo. Cada saque eletrônico cobra uma taxa de
+R$4.50. Ao final deve ser informado o saldo da conta caso dê tudo
+certo com o saque, e se o usuário informar um valor maior que o
+saldo deve ser informado ao usuário que o mesmo não tem dinheiro
+suficiente em conta para realizar o saque.
+OBS: Na verificação se o valor do saque é maior que o saldo deve
+ser considerado e também contabilizado o valor da taxa a ser
+cobrada pelo saque. Ou seja, o valor a ser sacado somado ao valor
+da taxa do saque não pode ser maior que o saldo disponível.
+
+let saldo = 500 ;
+let saque = 70  ;
+saque tem que ser menor que o saldo, mas maior que 0.
+tambem tem que ser multiplo de 5. 
+const taxa = 4,50 ;
+quando for sacado o dinheiro, sera cobrado um valor de taxa de 4,50. 
+no caso se for retirar 70 de 500, teria que pagar a taxa de 4,50 
+ficando 74,50.
+500 - 74,50 = 425,50
+se o valor do saque for maior que o saldo tera que retornar que o saldo é insuficiente.
+
+*/
+let saldo = 500; 
+let saque =494.50;
+const taxa = 4.50;
+const valorDeSaque = saque %5
+
+if (saque + taxa > saldo ) {
+    console.log ('Saldo insuficiente')
+} else if (saque > 0 && valorDeSaque == 0 ){
+    console.log ('Saque realizado com sucesso') 
+    saldo = saldo - (saque + taxa) 
+    console.log (`Seu novo saldo é: R$${saldo} `)
+} else {
+    console.log ('Impossível retirada')
+}
+
+
+
+
+
+</script>
+
+
+</body>
+</html>l

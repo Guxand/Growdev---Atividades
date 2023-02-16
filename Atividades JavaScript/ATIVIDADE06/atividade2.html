@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let somaHomens = 0;
+let somaMulheres = 0;
+let contadorHomens = 0;
+let contadorMulhere = 0;
+
+let continua = true;
+
+do {
+    let sexo = prompt("Informe o sexo do funcionário");
+    let salario = Number(prompt('Informe o salário do funcionário'))
+    if (sexo == 'masculino') {
+        contadorHomens++;
+        somaHomens += salario;
+    } else if (sexo == 'feminino'){
+        contadorMulhere++;
+        somaMulheres += salario
+    }
+    let resposta = prompt("Digite 999 se não quiser mais inserir funcionários ou 0 para continuar.")
+    if (resposta == 999) {
+        continua = false;
+    }
+}while (continua);
+
+document.write(`A soma do salário dos ${contadorHomens} funcionários é ${somaHomens} e a média salarial destes é ${somaHomens / contadorHomens}`)
+document.write(`<br>A soma do salário das ${contadorMulhere} funcionárias é ${somaMulheres} e a média salarial destas é ${somaMulheres / contadorMulhere}`)
+
+    </script>
+</body>
+</html>

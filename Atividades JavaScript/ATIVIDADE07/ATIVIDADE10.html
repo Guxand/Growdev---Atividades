@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*Tendo como entrada a altura e o sexo (codificado da seguinte
+forma: 1 para sexo feminino e 2 para sexo masculino) de uma
+pessoa, construa um programa que calcule e mostre seu peso ideal,
+utilizando as seguintes fórmulas:
+- para homens: (72.7 * Altura) – 58
+- para mulheres: (62.1 * Altura) – 44.7*/
+
+const altura = Number(prompt('Informe a sua altura.'))
+const genero = Number(prompt('Informe seu gênero. 1: Homens // 2: Mulheres.'));
+
+if (genero === 1) {
+    document.write(`Seu peso ideal é ${72.7*altura-58}`)
+} else if (genero === 2) {
+    document.write(`Seu peso ideal é ${62.1*altura-44.7}`)
+}
+    </script>
+</body>
+</html>
