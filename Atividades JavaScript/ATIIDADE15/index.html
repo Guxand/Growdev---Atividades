@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário elaborado</title>
+</head>
+<body>
+    <header>
+        <h1>Formulário</h1>
+    </header>
+    <main>
+        <form onsubmit="cadastrar(event)">
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <label for="nome">Nome completo:</label>
+                <input autofocus type="text" required name="nome" id="nome">
+                <br><br>
+                <label for="endereco">Endereço:</label>
+                <input type="text" required name="endereco" id="endereco">
+                <br><br>
+                <label for="cidade">Cidade:</label>
+                <input type="text" required name="cidade" id="cidade">
+                <br><br>
+                <label for="estado">Estado:</label>
+                <select required name="estado" id="estado">
+                    <option selected disabled value="selecionar">Selecionar</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Dados profissionais</legend>
+                <label for="cargo">Natureza do cargo</label>
+                <br>
+                <input type="radio" name="cargo" id="gerencia" value="Gerência" checked>
+                <label for="gerencia">Gerência</label>
+                <input type="radio" name="cargo" id="financeiro" value="Financeiro">
+                <label for="financeiro">Financeiro</label>
+                <input type="radio" name="cargo" id="recepcao" value="Recepção">
+                <label for="recepcao">Recepção</label>
+                <input type="radio" name="cargo" id="administrativo" value="Administrativo">
+                <label for="administrativo">Administrativo</label>
+                <input type="radio" name="cargo" id="juridico" value="Jurídico">
+                <label for="juridico">Jurídico</label>
+                <br><br>
+                <label for="areaDeInteresse">Área de interesse</label>
+                <br>
+                <input type="checkbox" required name="areaDeInteresse" id="computacao" value="Computacao">
+                <label for="computacao">Recursos Humanos</label>
+                <input type="checkbox" required name="areaDeInteresse" id="biologia" value="Biologia">
+                <label for="biologia">Biologia</label>
+                <input type="checkbox" required name="areaDeInteresse" id="meioAmbiente" value="Meio Ambiente">
+                <label for="meioAmbiente">Meio Ambiente</label>
+                <input type="checkbox" required name="areaDeInteresse" id="engenharia" value="Engenharia">
+                <label for="engenharia">Engenharia</label>
+                <input type="checkbox" required name="areaDeInteresse" id="historia" value="Historia">
+                <label for="historia">História</label>
+                <br><br>
+                <label for="resumo">Mini-curriculo</label>
+                <textarea name="resumo" id="resumo" cols="30" rows="10"></textarea>
+            </fieldset>
+            <br>
+            <input type="button" value="Limpar" id="btnLimpar">
+            <input type="submit" value="Enviar" id="btnEnviar">
+        </form>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>
